@@ -1,0 +1,65 @@
+body {
+	font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+header {
+	background-color: darkslategray;
+	padding: 0.5em 0;
+	margin-bottom: 2em;
+	text-align: center;
+	color: #fff;
+}
+
+header h1 {
+  font-weight: normal;
+}
+
+.content {
+	max-width: 760px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.main {
+  margin: auto;
+}
+
+.checkerboard {
+  border-collapse: collapse;
+  width: 720px;
+  box-sizing: border-box;
+}
+.checkerboard td {
+  width: 90px;
+  height: 90px;
+  border: 1px solid rgba(0,0,0,.5);
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.checkerboard tr:nth-of-type(even) td:nth-of-type(odd),
+.checkerboard tr:nth-of-type(odd) td:nth-of-type(even)
+ {
+  background-color: black;
+}
+
+.checkerboard .highlight {
+  background-color: rgba(0,0,0,.5) !important;
+}
+
+.draggable {
+  width: 100px;
+  height: 100px;
+}
+
+.piece {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: red;
+  display: inline-block;
+  margin-top: 1px;
+}
